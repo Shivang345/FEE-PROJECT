@@ -1,0 +1,80 @@
+<header class="bg-img">
+        <div class="gradient"></div>
+        <nav>
+            <img src="/WanderWave/WanderWave_images/logo.png">
+            <a href="#" class="login-button">
+                <i class="fa-regular fa-user"></i>
+                <p>Login / Sign Up</p>
+            </a>
+        </nav>
+        <div class="content">
+            <pre><h1>Customize & Book<br>Amazing Holiday<br>Packages</h1></pre>
+            <p>Explore Now <i class="fa-regular fa-arrow-right"></i> </p>
+        </div>
+
+        <ul class="navbar-2">
+            <li>
+                <a href="#" id="btn1" class="icons">
+                    <i class="fa-solid fa-plane-up"></i>
+                    <p>Flights</p>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" id="btn2" class="icons">
+                    <i class="fa-solid fa-hotel"></i>
+                    <p>Hotels</p>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" id="btn3" class="icons">
+                    <i class="fa-solid fa-suitcase-rolling"></i></i>
+                    <p>Packages</p>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" id="btn4" class="icons">
+                    <i class="fa-solid fa-binoculars"></i></i>
+                    <p>Sightseeing</p>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" id="btn5" class="icons">
+                    <i class="fa-solid fa-taxi"></i></i>
+                    <p>Cabs</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="navbar-3">
+            <div class="left-1">
+                <div class="inner-text">
+                    <span>From</span>
+                    <input type="text" placeholder="DEL-New Delhi">
+                </div>
+                <div class="inner-text">
+                    <span>To</span>
+                    <input type="text" placeholder="BOM-Mumbai">
+                </div>
+                <div class="inner-text">
+                    <span>Departure</span>
+                    <input type="text" placeholder="15 Sept 2024">
+                </div>
+                <div class="inner-text">
+                    <span>Return</span>
+                    <input type="text" placeholder="17 Sept 2024">
+                </div>
+                <div class="inner-text">
+                    <span>Passengers</span>
+                    <input type="text" placeholder="2 Adults">
+                </div>
+            </div>
+            <div class="right-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+    </header>
