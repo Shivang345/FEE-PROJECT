@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'montserrat';
+}
+
+/* HEADER */
+
+header{
+    background-image: url(WanderWave_images/bg-img-flights.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    position: relative;
+}
+
+.gradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
+    position: absolute;
+    height: 85vh;
+    width: 100vw;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 85.5vw;
+    margin: auto;
+    position: relative;
+}
+
+nav img{
+    width: 18vmax;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #0023A1;
+    border-radius: 7px;
+    color: white;
+    padding: 17px;
+}
+
+.login-button i {
+    font-size: 22px;
+}
+
+.content{
+    position: relative;
+    margin-top: 8vh;
+    margin-left: 7.5vw;
+}
+
+.content h1{
+    font-size: 3.7vmax;
+    padding-bottom: 30px;
+}
+
+.content p{
+    font-size: 1.4vmax;
+    font-weight: 450;
+}
+
+.content p i{
+    color: #F86800;
+}
+
+.navbar-2{
+    background-color: #0023A1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+    height: 8vh;
+    margin: auto;
+    margin-top: 8vh;
+    position: relative;
+    font-size: 1.2vmax;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    letter-spacing: 0.08vmax;
+}
+
+.navbar-2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-2 a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -8px;
+    content: "";
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-2 a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.navbar-2 i{
+    font-size: 1.8vmax;
+}
+
+.navbar-2 li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 0.8vmax 0;
+}
+
+.navbar-2 .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.navbar-2 hr{
+    color: white;
+    border-right: 1px white solid;
+    padding-top: 50px;
+}
+
+.navbar-3{
+    background-color: #ffffff;
+    height: 18vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    list-style: none;
+    font-size: 1.35vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-3 .left-1 {
+    width: 82%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-1 .inner-text{
+    width: 20%;
+    font-weight: 500;
+}
+
+.left-1 .inner-text input{
+    height: 4vh;
+    width: 90%;
+    border: none;
+    margin-top: 2.5vh;
+    font-size: 1.15vmax;
+}
+ 
+.navbar-3 i{
+    font-size: 1.5vmax;
+    padding: 1.8vmax;
+    background-color: #F86800;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+/* MAIN */
+
+main .headings{
+    font-size: 2.2vmax;
+    margin-top: 7vh;
+    margin-left: 7.5vw;
+}
+
+main .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 60%;
+    background-color: #E5E5E5;
+    margin-top: 4vh;
+    margin-left: 7.5vw;
+    font-size: 1.2vmax;
+}
+
+.cards li{
+    padding: 1.8vmax 2.4vmax;
+}
+
+.cards li:hover{
+    background-color: #F86800;
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+main .Destinations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 7vh;
+    list-style: none;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.Destinations li{
+    height: 100%;
+}
+
+.box{
+    height: 30vh;
+    margin-top: 10vh;
+    background-color: #F86800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .inner-box{
+    height: 50%;
+    width: 75%;
+    border-radius: 20px;
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1.2vmax;
+}
+
+.inner-box li{
+    margin-right: 5vmax;
+    margin-top: 2vmax;
+    font-weight: 500;
+}
+
+.hotels{
+    width: 85%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hotels .card h3{
+    font-size: 1.3vmax;
+    margin-top: 2vh;
+}
+
+.hotels .card p{
+    font-size: 1.1vmax;
+    margin-top: 1vh;
+}
+
+.hotels .card .rating{
+    display: flex; 
+    display: inline-block;
+    align-items: center; 
+    background-color: #0023A1;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.app{
+    background-image: url(WanderWave_images/App.png);
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    width: 85%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 7vh;
+    position: relative;
+}
+
+.app .gradient-3{
+    background-image: url(WanderWave_images/gradient-3.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.app .main-part{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+}
+
+.main-part .left-2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5vw;
+}
+
+.main-part .left-2 h1{
+    font-size: 3.3vmax;
+    padding-bottom: 0.5vh;
+}
+
+.main-part .left-2 p{
+    font-size: 1.1vmax;
+    padding-bottom: 4vh;
+}
+
+.main-part .right-2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faaltu{
+    height: 500px;
+}
+
+
+@media (max-width:600px) {
+    .gradient{
+        display: none;
+    }
+}
