@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWave | Official site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      main .headings {
+        font-size: 2.2vmax;
+        margin-top: 7vh;
+        margin-left: 7.5vw;
+      }
+
+      .hotels {
+        width: 85%;
+        height: 60vh;
+        margin: auto;
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .hotels .card h3 {
+        font-size: 1.3vmax;
+        margin-top: 2vh;
+      }
+
+      .hotels .card p {
+        font-size: 1.1vmax;
+        margin-top: 1vh;
+      }
+
+      .hotels .card .rating {
+        display: flex;
+        display: inline-block;
+        align-items: center;
+        background-color: #0023a1;
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 5px;
+      }
+
+      .app {
+        background-image: url(PHOTOS/App.png);
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
+        width: 85%;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 7vh;
+        position: relative;
+      }
+
+      .app .gradient-3 {
+        background-image: url(PHOTOS/gradient-3.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        position: absolute;
+      }
+
+      .app .main-part {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+        position: relative;
+      }
+
+      .main-part .left-2 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5vw;
+      }
+
+      .main-part .left-2 h1 {
+        font-size: 3.3vmax;
+        padding-bottom: 0.5vh;
+      }
+
+      .main-part .left-2 p {
+        font-size: 1.1vmax;
+        padding-bottom: 4vh;
+      }
+
+      .main-part .right-2 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h2 class="headings">Hotels Recommended by our Experts</h2>
+      <div class="hotels">
+        <div class="card">
+          <img src="Photos/hotel-1.png" alt="" />
+          <h3>Hotel Tulip Garden</h3>
+          <p>Near IGI Airport, Aerocity road, Delhi</p>
+          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
+          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
+          <p style="text-decoration: line-through">₹2999</p>
+          <p style="color: #f86800">65% off</p>
+        </div>
+        <div class="card">
+          <img src="Photos/hotel-2.png" alt="" />
+          <h3>Hotel Tulip Garden</h3>
+          <p>Near IGI Airport, Aerocity road, Delhi</p>
+          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
+          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
+          <p style="text-decoration: line-through">₹2999</p>
+          <p style="color: #f86800">65% off</p>
+        </div>
+        <div class="card">
+          <img src="Photos/hotel-3.png" alt="" />
+          <h3>Hotel Tulip Garden</h3>
+          <p>Near IGI Airport, Aerocity road, Delhi</p>
+          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
+          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
+          <p style="text-decoration: line-through">₹2999</p>
+          <p style="color: #f86800">65% off</p>
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="gradient-3"></div>
+        <div class="main-part">
+          <div class="left-2">
+            <h1>Download Now!</h1>
+            <p>
+              Download our app now and change the way you travel. Available for
+              Android and Apple
+            </p>
+            <div class="bubbles">
+              <img src="Photos/google play.png" />
+              <img src="Photos/app store.png" />
+            </div>
+          </div>
+          <div class="right-2">
+            <img src="Photos/mobile.png" height="85%" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
