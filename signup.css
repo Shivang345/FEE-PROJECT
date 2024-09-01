@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+body{
+    height: 100vh;
+    background-image: url(WanderWave_images/bg-img-packages.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    position: relative;
+    height: 34vw;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    color: white;
+    z-index: 0;
+}
+
+.form{
+    height: 90%;
+    width: 75%;
+}
+
+.logo{
+    height: 15%;
+    width: 60%;
+    background-image: url("WanderWave_images/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.form h2{
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    border-bottom: 2px solid black;
+    margin: 2vw 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .4s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -15px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.15vw;
+    font-weight: 600;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2vw;
+    color: black;
+    line-height: 3vw;
+}
+
+.forgot{
+    font-size: 1vw;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot label input{
+    accent-color: black;
+    margin-right: 5px;
+}
+
+.forgot a{
+    color: black;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 3vw;
+    background: transparent;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 500;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease .3s;
+}
+
+.btn:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+.btn span{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.btn:hover span{
+    color: white;
+}
+
+.register{
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
+
+.register p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.right{
+    position: relative;
+    color: black;
+    height: 30vw;
+    width: 27vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2vw 1vw;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.right h3{
+    height: 5%;
+    font-size: 1vw;
+    font-weight: 400;
+    padding-left: 1vw;
+}
+
+.right .middle{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle .box{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.box i{
+    font-size: 2.5vw;
+    width: 20%;
+    text-align: center;
+}
+
+.box .fuck{
+    width: 80%;
+}
+
+.box h4{
+    font-size: 1.2vw;
+}
+
+.box p{
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+}
+
+.coupon{
+    height: 25%;
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    border-left: 8px solid #0023A1;
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+.coupon h4{
+    font-size: 1.2vw;
+}
+
+.coupon p{
+    font-size: 1vw;
+    margin-top: 2px;
+}
