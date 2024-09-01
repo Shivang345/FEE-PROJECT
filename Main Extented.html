@@ -1,170 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WanderWave | Official site</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      main .headings {
-        font-size: 2.2vmax;
-        margin-top: 7vh;
-        margin-left: 7.5vw;
-      }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat';
+        }
 
-      .hotels {
-        width: 85%;
-        height: 60vh;
-        margin: auto;
-        margin-top: 5vh;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
+        body {
+            background-color: #E5E5E5;
+        }
 
-      .hotels .card h3 {
-        font-size: 1.3vmax;
-        margin-top: 2vh;
-      }
+        .main {
+            height: 40vw;
+            width: 85%;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 0 3vw;
+            border-radius: 20px;
+        }
 
-      .hotels .card p {
-        font-size: 1.1vmax;
-        margin-top: 1vh;
-      }
+        .main .headings {
+            font-size: 2.3vmax;
+        }
 
-      .hotels .card .rating {
-        display: flex;
-        display: inline-block;
-        align-items: center;
-        background-color: #0023a1;
-        color: #ffffff;
-        padding: 4px;
-        border-radius: 5px;
-      }
+        .box {
+            height: 23vw;
+            background-color: #F86800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-      .app {
-        background-image: url(PHOTOS/App.png);
-        background-size: cover;
-        background-position: center center;
-        height: 50vh;
-        width: 85%;
-        border-radius: 20px;
-        margin: auto;
-        margin-top: 7vh;
-        position: relative;
-      }
+        .box .inner-box {
+            height: 50%;
+            width: 75%;
+            border-radius: 15px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            box-shadow: 5px 5px 5px black;
+            font-size: 1.2vmax;
+        }
 
-      .app .gradient-3 {
-        background-image: url(PHOTOS/gradient-3.png);
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        border-radius: 20px;
-        position: absolute;
-      }
+        .inner-box li {
+            margin-right: 5vmax;
+            margin-top: 2vmax;
+            font-weight: 500;
+        }
 
-      .app .main-part {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        color: #ffffff;
-        position: relative;
-      }
+        #qwerty.main {
+            height: 45vw;
+        }
 
-      .main-part .left-2 {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 5vw;
-      }
+        .hotels {
+            width: 100%;
+            height: 35vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1vw;
+            margin-bottom: -10px;
+        }
 
-      .main-part .left-2 h1 {
-        font-size: 3.3vmax;
-        padding-bottom: 0.5vh;
-      }
+        .hotels .card {
+            height: 100%;
+            width: 100%;
+        }
 
-      .main-part .left-2 p {
-        font-size: 1.1vmax;
-        padding-bottom: 4vh;
-      }
+        .hotels .card a {
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+            display: inline-block;
+            border-radius: 15px;
+            transition: all ease-in .2s;
+        }
 
-      .main-part .right-2 {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-      }
+        .hotels a:hover {
+            transform: scale(1.05);
+        }
+
+        .hotels .card h3 {
+            font-size: 1.3vmax;
+            margin-top: 1.6vw;
+        }
+
+        .hotels .card p {
+            font-size: 1.1vmax;
+            margin-top: 0.8vw;
+        }
+
+        .hotels .card .rating {
+            display: flex;
+            display: inline-block;
+            align-items: center;
+            background-color: #0023A1;
+            color: #ffffff;
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+        .app {
+            background-image: url(WanderWave_images/App.png);
+            background-size: cover;
+            background-position: center center;
+            height: 60vh;
+            width: 85%;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 7vh;
+            position: relative;
+        }
+
+        .app .gradient-3 {
+            background-image: url(WanderWave_images/gradient-3.png);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            position: absolute;
+        }
+
+        .app .main-part {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .main-part .left-2 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 5vw;
+        }
+
+        .main-part .left-2 h1 {
+            font-size: 3.3vmax;
+            padding-bottom: 0.5vh;
+        }
+
+        .main-part .left-2 p {
+            font-size: 1.1vmax;
+            padding-bottom: 4vh;
+        }
+
+        .main-part .right-2 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
-    <main>
-      <h2 class="headings">Hotels Recommended by our Experts</h2>
-      <div class="hotels">
-        <div class="card">
-          <img src="Photos/hotel-1.png" alt="" />
-          <h3>Hotel Tulip Garden</h3>
-          <p>Near IGI Airport, Aerocity road, Delhi</p>
-          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
-          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
-          <p style="text-decoration: line-through">₹2999</p>
-          <p style="color: #f86800">65% off</p>
-        </div>
-        <div class="card">
-          <img src="Photos/hotel-2.png" alt="" />
-          <h3>Hotel Tulip Garden</h3>
-          <p>Near IGI Airport, Aerocity road, Delhi</p>
-          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
-          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
-          <p style="text-decoration: line-through">₹2999</p>
-          <p style="color: #f86800">65% off</p>
-        </div>
-        <div class="card">
-          <img src="Photos/hotel-3.png" alt="" />
-          <h3>Hotel Tulip Garden</h3>
-          <p>Near IGI Airport, Aerocity road, Delhi</p>
-          <p class="rating">4.8<i class="fa-solid fa-star"></i></p>
-          <p style="font-weight: 600; font-size: 1.3vmax">₹1399</p>
-          <p style="text-decoration: line-through">₹2999</p>
-          <p style="color: #f86800">65% off</p>
-        </div>
-      </div>
+<body>
+    <div class="box">
+        <ul class="inner-box">
+            <li>
+                <pre>
+                <b>140+</b>
+                Destinations
+                </pre>
+            </li>
+            <li>
+                <pre>
+                <b>1500+</b>
+                Hotels Listed
+                </pre>
+            </li>
+            <li>
+                <pre>
+                <b>25k+</b>
+                Happy Customers
+                </pre>
+            </li>
+        </ul>
+    </div>
 
-      <div class="app">
+    <div class="main" id="qwerty">
+        <h2 class="headings">Hotels Recommended by our Experts</h2>
+        <div class="hotels">
+            <div class="card">
+                <a href="#" style="background-image: url('WanderWave_images/hotel-1.png');"></a>
+                <h3>Hotel Tulip Garden</h3>
+                <p>Near IGI Airport, Aerocity road, Delhi</p>
+                <p class="rating">
+                    4.8<i class="fa-solid fa-star"></i>
+                </p>
+                <p style="font-weight: 600;font-size: 1.3vmax;">₹1399</p>
+                <p style="text-decoration:line-through;">₹2999</p>
+                <p style="color: #F86800">65% off</p>
+            </div>
+            <div class="card">
+                <a href="#" style="background-image: url('WanderWave_images/hotel-2.png');"></a>
+                <h3>Hotel Tulip Garden</h3>
+                <p>Near IGI Airport, Aerocity road, Delhi</p>
+                <p class="rating">
+                    4.8<i class="fa-solid fa-star"></i>
+                </p>
+                <p style="font-weight: 600;font-size: 1.3vmax;">₹1399</p>
+                <p style="text-decoration:line-through;">₹2999</p>
+                <p style="color: #F86800">65% off</p>
+            </div>
+            <div class="card">
+                <a href="#" style="background-image: url('WanderWave_images/hotel-3.png');"></a>
+                <h3>Hotel Tulip Garden</h3>
+                <p>Near IGI Airport, Aerocity road, Delhi</p>
+                <p class="rating">
+                    4.8<i class="fa-solid fa-star"></i>
+                </p>
+                <p style="font-weight: 600;font-size: 1.3vmax;">₹1399</p>
+                <p style="text-decoration:line-through;">₹2999</p>
+                <p style="color: #F86800">65% off</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app">
         <div class="gradient-3"></div>
         <div class="main-part">
-          <div class="left-2">
-            <h1>Download Now!</h1>
-            <p>
-              Download our app now and change the way you travel. Available for
-              Android and Apple
-            </p>
-            <div class="bubbles">
-              <img src="Photos/google play.png" />
-              <img src="Photos/app store.png" />
+            <div class="left-2">
+                <h1>Download Now!</h1>
+                <p>Download our app now and change the way you travel. Available for Android and Apple</p>
+                <div class="bubbles">
+                    <img src="WanderWave_images/google play.png">
+                    <img src="WanderWave_images/app store.png">
+                </div>
             </div>
-          </div>
-          <div class="right-2">
-            <img src="Photos/mobile.png" height="85%" />
-          </div>
+            <div class="right-2">
+                <img src="WanderWave_images/mobile.png" height="85%">
+            </div>
         </div>
-      </div>
-    </main>
-  </body>
-</html>
+    </div>
+</body>
