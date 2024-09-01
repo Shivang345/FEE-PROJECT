@@ -221,15 +221,15 @@ body{
     text-align: center;
 }
 
-.box .fuck{
+.benefits{
     width: 80%;
 }
 
-.box h4{
+.benefits h4{
     font-size: 1.2vw;
 }
 
-.box p{
+.benefits p{
     font-size: 0.9vw;
     letter-spacing: 1px;
 }
