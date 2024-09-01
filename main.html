@@ -11,154 +11,175 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-
-        main .headings {
-            font-size: 2.2vmax;
-            margin-top: 7vh;
-            margin-left: 7.5vw;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat';
         }
 
-        main .cards {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            width: 60%;
+        body {
             background-color: #E5E5E5;
-            margin-top: 4vh;
-            margin-left: 7.5vw;
-            font-size: 1.2vmax;
         }
 
-        .cards li {
-            padding: 1.8vmax 2.4vmax;
+        .main {
+            height: 40vw;
+            width: 85%;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 0 3vw;
+            border-radius: 20px;
         }
 
-        .cards li:hover {
-            background-color: #F86800;
+        .main .headings {
+            font-size: 2.3vmax;
+        }
+
+        .main .cards {
+            background-color: #E5E5E5;
+            padding: 1.5vmax 0;
         }
 
         .cards a {
+            padding: 1.5vmax;
             text-decoration: none;
             color: black;
+            font-size: 1.2vmax;
+            transition: all ease-in .2s;
         }
 
-        main .Destinations {
+        .cards a:hover {
+            background-color: #F86800;
+        }
+
+        .Destinations {
+            height: 22vw;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 85%;
-            height: 30vh;
-            margin: auto;
-            margin-top: 7vh;
-            list-style: none;
-            position: relative;
-            flex-wrap: wrap;
+            gap: 1vw;
         }
 
-        .Destinations li {
+        .Destinations a {
             height: 100%;
-        }
-
-        .box {
-            height: 30vh;
-            margin-top: 10vh;
-            background-color: #F86800;
+            width: 100%;
+            color: white;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: all ease-in .2s;
+            position: relative;
+            overflow: hidden;
         }
 
-        .box .inner-box {
-            height: 50%;
-            width: 75%;
-            border-radius: 20px;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            list-style: none;
-            box-shadow: 5px 5px 5px black;
-            font-size: 1.2vmax;
+        .Destinations a:hover {
+            transform: scale(1.05);
         }
 
-        .inner-box li {
-            margin-right: 5vmax;
-            margin-top: 2vmax;
-            font-weight: 500;
+        .Destinations .gradient-2 {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .Destinations a h5 {
+            align-self: flex-end;
+            margin: 0 0 1vw 1vw;
+            font-size: 1.4vmax;
+            position: relative;
+        }
+
+        .Destinations a p {
+            align-self: flex-start;
+            margin: 0.8vmax;
+            font-size: 0.9vmax;
+            text-align: right;
+            position: relative;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <h2 class="headings">Explore Best-selling Flights for</h2>
-        <ul class="cards">
-            <a href="#">
-                <li>1 to 3 days</li>
-            </a>
-            <a href="#">
-                <li>4 to 6 days</li>
-            </a>
-            <a href="#">
-                <li>7 to 9 days</li>
-            </a>
-            <a href="#">
-                <li>10 to 12 days</li>
-            </a>
-            <a href="#">
-                <li>13 or more days</li>
-            </a>
-        </ul>
+        <div class="main">
+            <h2 class="headings">Popular Flight Routes</h2>
+            <div class="cards">
+                <a href="#">1 to 3 days</a>
+                <a href="#">4 to 7 days</a>
+                <a href="#">8 to 10 days</a>
+                <a href="#">11 to 13 days</a>
+                <a href="#">13 or more days</a>
+            </div>
 
-        <ul class="Destinations">
-            <li>
-                <img src="main images/Maldives.png">
-            </li>
-            <li>
-                <img src="main images/Dubai.png">
-            </li>
-            <li>
-                <img src="main images/Thailand.png">
-            </li>
-            <li>
-                <img src="main images/Sri Lanka.png">
-            </li>
-            <li>
-                <img src="main images/Europe.png">
-            </li>
-        </ul>
+            <div class="Destinations">
+                <a href="#" style="background-image: url('main images/Maldives.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Maldives</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Dubai.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Dubai</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Thailand.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Thailand</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Sri\ Lanka.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Sri Lanka</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Europe.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Europe</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+            </div>
+        </div>
 
-        <h2 class="headings">Best Priced Flights within Budget</h2>
-        <ul class="cards">
-            <a href="#">
-                <li>Less than ₹10000</li>
-            </a>
-            <a href="#">
-                <li>Less than ₹20000</li>
-            </a>
-            <a href="#">
-                <li>Less than ₹30000</li>
-            </a>
-            <a href="#">
-                <li>Less than ₹50000</li>
-            </a>
-            <a href="#">
-                <li>More than ₹50000</li>
-            </a>
-        </ul>
+        <div class="main">
+            <h2 class="headings">Popular Flight Routes</h2>
+            <div class="cards">
+                <a href="#">Less than ₹10000</a>
+                <a href="#">Less than ₹20000</a>
+                <a href="#">Less than ₹30000</a>
+                <a href="#">Less than ₹40000</a>
+                <a href="#">Less than ₹50000</a>
+            </div>
 
-        <ul class="Destinations">
-            <li>
-                <img src="main images/Maldives-2.png">
-            </li>
-            <li>
-                <img src="main images/Dubai-2.png">
-            </li>
-            <li>
-                <img src="main images/Thailand-2.png">
-            </li>
-        </ul>
+            <div class="Destinations">
+                <a href="#" style="background-image: url('main images/Maldives-2.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Maldives</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Dubai-2.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Dubai</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+                <a href="#" style="background-image: url('main images/Thailand-2.png');">
+                    <div class="gradient-2"></div>
+                    <h5>Thailand</h5>
+                    <p>Starting from ₹7999</p>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
