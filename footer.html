@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat';
+        }
+
+        body {
+            background-color: #E5E5E5;
+        }
+
+        .foot-panel1 {
+            background-color: #acacac;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3vw;
+            font-size: 0.9vw;
+        }
+
+        .foot-panel1 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .foot-panel1 a:hover {
+            text-decoration: underline;
+            color: #0023A1;
+        }
+
+        .foot-panel2 {
+            height: 18vw;
+            color: black;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        .foot-panel2 li {
+            margin-top: 2.5vw;
+        }
+
+        .foot-panel2 li p {
+            font-size: 1.2vw;
+            font-weight: 700;
+        }
+
+        .foot-panel2 li a {
+            color: black;
+            font-size: 0.9vw;
+            display: block;
+            text-decoration: none;
+            margin-top: 1vw;
+        }
+
+        .foot-panel2 li a:hover {
+            color: #F86800;
+        }
+
+        .foot-panel2 .social-links {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .foot-panel2 .social-links a {
+            height: 1.9vw;
+            width: 1.9vw;
+            font-size: 1.4vw;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            background-color: rgba(255, 255, 255);
+            transition: all 0.3s ease;
+        }
+
+        .foot-panel2 .social-links a:hover {
+            background-color: black;
+            color: white;
+            scale: 1.4;
+        }
+
+        .foot-panel3 {
+            background-color: #E5E5E5;
+            border-top: 0.5px solid #acacac;
+            height: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .foot-panel3 a {
+            height: 100%;
+            width: 15%;
+            background-image: url("WanderWave_images/logo.png");
+            background-size: cover;
+        }
+
+        .foot-panel4 {
+            background-color: #acacac;
+            color: black;
+            height: 5vw;
+            font-size: 0.9vw;
+            text-align: center;
+        }
+
+        .foot-panel4 .pages {
+            padding-top: 1.2vw;
+        }
+
+        .foot-panel4 .pages a {
+            padding-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .foot-panel4 .pages a:hover {
+            text-decoration: underline;
+        }
+
+        .foot-panel4 .copyright {
+            padding-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="foot-panel1">
+            <a href="#top">Back to Top</a>
+        </div>
+
+        <ul class="foot-panel2">
+            <li>
+                <p>Our Team</p>
+                <a href="">Shivang Jaswal</a>
+                <a href="">Sahibdeep Singh</a>
+                <a href="">Sachin Kumar</a>
+                <a href="">Loveneet Kaur</a>
+            </li>
+            <li>
+                <p>Contact Us</p>
+                <a href="">WanderWave@info.com</a>
+                <a href="">123-456-789</a>
+                <a href="">500 Terneit Colony</a>
+                <a href="">AU 93356</a>
+            </li>
+            <li>
+                <p>Packages</p>
+                <a href="">Budget Packages</a>
+                <a href="">Packages by days</a>
+                <a href="">Honeymoon Packages</a>
+                <a href="">Family Packages</a>
+                <a href="">Get away packages</a>
+            </li>
+            <li>
+                <p>Let Us Help You</p>
+                <a href="">Your Account</a>
+                <a href="">Your Orders</a>
+                <a href="">COVID-19 response</a>
+                <a href="">Manage Your Content</a>
+                <a href="">Help</a>
+            </li>
+            <li>
+                <p>Follow Us</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="foot-panel3">
+            <a href="" class="logo"></a>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="">Conditions of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 2005-2024, WanderWave.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
