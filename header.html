@@ -23,21 +23,20 @@
 body{
     background-color: #E5E5E5;
 }
-/* HEADER */
 
 header {
     background-image: url(WanderWave_images/bg-img-flights.jpeg);
     background-size: cover;
     background-position: center center;
-    height: 85vh;
+    height: 100vh;
     position: relative;
 }
 
 .gradient {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
     position: absolute;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -48,7 +47,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 85.5vw;
+    max-width: 92vw;
     margin: auto;
     position: relative;
 }
@@ -61,79 +60,88 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    gap: 10px;
+    font-size: 1.2vmax;
+    gap: 0.8vmax;
     text-decoration: none;
-    background-color: #0023A1;
     border-radius: 7px;
-    color: white;
-    padding: 17px;
+    background-color: #0023A1;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1.1vmax;
+    transition: all ease 0.3s;
 }
 
 .login-button i {
     font-size: 22px;
 }
 
+.login-button:hover{
+    background: transparent;
+    background-color: #0023A1;
+    color: #ffffff;
+}
+
 .content {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: auto;
     position: relative;
-    margin-top: 8vh;
-    margin-left: 7.5vw;
+    color: #ffffff;
 }
 
 .content h1 {
+    text-align: center;
     font-size: 3.7vmax;
     padding-bottom: 30px;
+    font-weight: 500;
 }
 
-.content .scroll-container {
-    height: 4vw;
-    width: 30%;
-    overflow: hidden;
-
-}
-
-.content .scroll-text {
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    transform: translateY(-100%);
-    animation: scrolling 5s linear infinite;
-}
-
-@keyframes scrolling {
-    from {
-        transform: translateY(-230%);
-    }
-
-    to {
-        transform: translateY(60%);
-    }
-}
-
-.content p {
-    font-size: 1.4vmax;
-    font-weight: 450;
+.content a{
+    font-size: 1.2vmax;
+    font-weight: 400;
     cursor: pointer;
+    outline: none;
+    padding: 0.7vmax 1.1vmax;
+    border: 2px solid white;
+    border-radius: 7px;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all ease .3s;
 }
 
-.content p i {
-    color: #F86800;
+.content a:hover{
+    background-color: #F86800;
+    color: white;
+    border-color: #F86800;
+    scale: 1.02;
+}
+
+.navbar-grid{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .navbar-2 {
+    height: 5vmax;
+    width: 57.5vw;
     background-color: #0023A1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 60vw;
-    height: 8vh;
-    margin: auto;
-    margin-top: 8vh;
     position: relative;
     font-size: 1.2vmax;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    letter-spacing: 0.08vmax;
+    letter-spacing: 0.04vmax;
 }
 
 .navbar-2 a {
@@ -178,14 +186,13 @@ nav img {
 .navbar-2 hr {
     color: white;
     border-right: 1px white solid;
-    padding-top: 50px;
+    padding-top: 2vw;
 }
 
 .navbar-3 {
+    height: 10.5vmax;
+    width: 77.5vw;
     background-color: #ffffff;
-    height: 18vh;
-    width: 80vw;
-    margin: auto;
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
@@ -194,26 +201,37 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* scale: 1.03;
+    z-index: 11; */
 }
 
 .navbar-3 .left-1 {
-    width: 82%;
+    width: 85%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .left-1 .inner-text {
     width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
 }
 
+.left-1 .inner-text p{
+    width: 90%;
+}
+
 .left-1 .inner-text input {
-    height: 4vh;
+    height: 3vw;
     width: 90%;
     border: none;
-    margin-top: 2.5vh;
+    margin-top: 1.3vw;
     font-size: 1.15vmax;
     color: #acacac;
 }
