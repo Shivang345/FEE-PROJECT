@@ -22,12 +22,12 @@ body{
     justify-content: center;
     align-items: center;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 15px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     border: 2px solid black;
     color: white;
-    z-index: 0;
+    z-index: 2;
 }
 
 .form{
@@ -71,7 +71,7 @@ body{
 
 .input-box input:focus~label,
 .input-box input:valid~label{
-    top: -15px;
+    top: -20px;
 }
 
 .input-box input{
@@ -96,14 +96,20 @@ body{
     font-size: 1vw;
     color: black;
     font-weight: 500;
-    margin: -15px 0 35px;
+    margin: -1vw 0 3vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.forgot label{
+    display: flex;
+    align-items: center;
 }
 
 .forgot label input{
     accent-color: black;
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .forgot a{
@@ -136,7 +142,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #000;
     left: 0;
     bottom: -100%;
     border-radius: 50%;
@@ -164,7 +170,7 @@ body{
     color: black;
     text-align: center;
     font-weight: 500;
-    margin: 15px 0 10px;
+    margin: 1.2vw 0 10px;
 }
 
 .register p a{
@@ -187,12 +193,13 @@ body{
     flex-direction: column;
     padding: 2vw 1vw;
     border: 2px solid black;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background: transparent;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    scale: 1.02;
+    z-index: 1;
 }
 
 .right h3{
@@ -202,14 +209,14 @@ body{
     padding-left: 1vw;
 }
 
-.right .middle{
+.middle{
     height: 95%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.middle .box{
+.box{
     height: 25%;
     display: flex;
     align-items: center;
